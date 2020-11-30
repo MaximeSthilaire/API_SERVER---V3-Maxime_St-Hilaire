@@ -12,7 +12,7 @@ let repositoryEtags = {};
 
 module.exports = 
 class Repository {
-    constructor(objectsName) {//Faire en sorte que le constructeur prenne un vai ou faux pour le cache (dans le meme genre que needAuthorization pour les accounts)
+    constructor(objectsName) {
         this.objectsName = objectsName.toLowerCase();
         this.objectsList = [];
         this.objectsFile = `./data/${objectsName}.json`;
